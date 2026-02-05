@@ -68,7 +68,7 @@ function deletePassword(index) {
 function generatePassword() {
     let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()";
     let password = "";
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++){
         password += charset.charAt(Math.floor(Math.random() * charset.length));
     }
     document.querySelector("input[name='password']").value = password;
